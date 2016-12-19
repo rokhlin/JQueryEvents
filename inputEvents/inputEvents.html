@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Events</title>
+    <script src="../jquery-3.1.1.min.js"></script>
+    <script src="inputEvents.js" async></script>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: "Arial Narrow";
+            font-size: 20px;
+        }
+        .inp{
+            position: absolute;
+            top:200px;
+            left: 400px;
+        }
+
+       #dropdown{
+            border: 1px solid slategrey;
+        }
+        #dropdown p:hover{
+            background-color: darkgrey;
+        }
+
+        p{
+            margin: 0;
+            padding: 3px;
+        }
+
+    </style>
+</head>
+<body>
+<div  class="inp">
+    <input id="first"/>
+   <div id="dropdown"></div>
+</div>
+</body>
+</html>

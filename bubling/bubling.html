@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bubling</title>
+    <script src="../jquery-3.1.1.min.js"></script>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+        }
+        #first{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        #second{
+            position: absolute;
+            top:0;
+            left: 400px;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        #third{
+            position: absolute;
+            top:500px;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: deepskyblue;
+        }
+        .border{
+            border: 10px solid black;
+        }
+    </style>
+</head>
+<body>
+<div id="first">
+    <div id="second">
+        <div id="third">
+
+        </div>
+    </div>
+</div>
+<script>
+//    //native JavaScript
+//    document.getElementById("first").onclick = function(e){
+//        //this.style.backgroundColor = "green";
+//        e.target.classList.add("border");
+//}
+    // JQuery ecma6
+    $("#first").on("click", (e) => $(e.target).toggleClass("border"));
+
+</script>
+</body>
+</html>

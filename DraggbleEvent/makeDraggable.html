@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make Draggable</title>
+    <script src="../jquery-3.1.1.min.js"></script>
+    <script src="makeDraggable.js"></script>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .sq{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+
+        }
+
+        .r{
+            top: 50px;
+            left:50px;
+            background-color: red;
+        }
+        .g{
+            top: 350px;
+            left: 350px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+<div id="first" class="sq r"></div>
+<div id="second" class="sq g"></div>
+<script>
+    makeDraggable(document.getElementById("first"));
+    makeDraggable(document.getElementById("second"));
+</script>
+</body>
+</html>
